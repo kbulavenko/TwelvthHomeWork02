@@ -1,0 +1,97 @@
+- (void) addValue : (Human) value;
+-(BOOL) containsValue : (Human) value;
+// Методы
+- добавление человека в список людей
+- поиск человека
+- удаление человека
+- вывод списка людей на экран
+
+
+
+
+ДЗ - 12
+Дана структура с описанием параметров людей:
+struct Human
+{
+char lastname[32];
+char firstname[32];
+int age;
+BOOL gender;
+};
+Переделать класс MyArray для хранение данных о людях в виде структур. (см. выше)
+class MyArray
+{
+Human *p;
+int size
+}
+// Реализовать следующие методы класса:
+- (void) addValue : (Human) value;
+-(BOOL) containsValue : (Human) value;
+// Методы
+- добавление человека в список людей
+- поиск человека
+- удаление человека
+- вывод списка людей на экран
+
+Вызов методов осуществить в main (используя MyArray)
+функционал
+- добавление человека в список людей
+- поиск человека
+- удаление человека
+- вывод списка людей на экран
+
+Частичная реализация в main (сделано на занятиях)
+BOOL isRun = true;
+while(isRun)
+{
+NSLog(@"1 - Добавить человека");
+NSLog(@"2 - Найти человека");
+NSLog(@"3 - Удалить человека по номеру в списке");
+NSLog(@"4 - Вывести список людей");
+NSLog(@"5 - Выход");
+int a;
+scanf("%i",&a);
+
+switch (a)
+{
+case 1:
+{
+struct Human N = makeHuman();
+[A addValue : N];
+break;
+}
+
+case 2 :
+{
+struct Human N = makeHuman();
+if ( [A containsValue : N])
+{
+NSLog(@"Есть такой человек");
+}
+else
+{
+NSLog(@"Нет такого человека");
+}
+break;
+}
+case 3:
+{
+NSLog(@"Здесь удаление человека");
+break;
+}
+case 4:
+{
+NSLog(@"Здесь вывод списка людей");
+break;
+}
+case 5:
+{
+isRun = false;
+break;
+}
+
+default:
+break;
+}
+}
+Мне нравитсяПоказать список оценивших
